@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script type="text/javascript" src="js/digital-clock.js" defer></script>
+<script type="text/javascript" src="js/date.js" defer></script>
+<script type="text/javascript" src="js/nightmode.js" defer></script>
+<!--because the javascript is in 3 different documents the last document will overwrite de document before so window.onload doesn't work in the js documents and is there an onload event in de body tag-->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+<head>
+	<title>spaceX the first marsians</title>
+</head>
+<body id="body" onload="startTime(); dayCycle(); dateToday();">
+	<h1>Coordinated Universal Time</h1>
+	<div id="t-d">
+		<div id="time"></div>
+		<div id="date"></div>
+	</div>
+</body>
+</html>
